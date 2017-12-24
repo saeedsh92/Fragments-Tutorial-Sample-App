@@ -1,39 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ss.com.fragments.MainActivity">
 
-    <LinearLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Simple Fragment"
-            style="@style/PrimaryButtonStyle"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_main">
 
-        <Button
-            android:layout_width="250dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fragment Transaction"
-            style="@style/PrimaryButtonStyle"/>
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="ViewPager"
-            style="@style/PrimaryButtonStyle"/>
+            <Button
+                android:id="@+id/btn_main_simple"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Say Hello to Fragments" />
 
-        <Button
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Multipane layout"
-            style="@style/PrimaryButtonStyle"/>
-    </LinearLayout>
-</FrameLayout>
+            <Button
+                android:id="@+id/btn_main_fragmentTransaction"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Fragment Transaction" />
+
+            <Button
+                android:id="@+id/btn_main_viewPager"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="ViewPager" />
+
+            <Button
+                android:id="@+id/btn_main_multipaneLayout"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Multipane layout" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
