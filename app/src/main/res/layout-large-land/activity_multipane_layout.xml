@@ -7,7 +7,16 @@
 
     <fragment
         android:id="@+id/fragment_multiPaneLayout_contacts"
+        android:name="ss.com.fragments.ContactsFragment"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true" />
+
+    <fragment
+        android:id="@+id/fragment_multiPaneLayout_chat"
+        android:name="ss.com.fragments.ChatFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="ss.com.fragments.ContactsFragment"/>
+        android:layout_toRightOf="@id/fragment_multiPaneLayout_contacts" />
+
 </RelativeLayout>

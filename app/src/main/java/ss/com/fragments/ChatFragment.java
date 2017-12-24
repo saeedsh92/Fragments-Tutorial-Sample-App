@@ -19,4 +19,8 @@ public class ChatFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_chat, container, false);
     }
+
+    public void updateContent(Contact contact) {
+        Toast.makeText(getContext(), contact.getContactName(), Toast.LENGTH_LONG).show();
+    }
 }

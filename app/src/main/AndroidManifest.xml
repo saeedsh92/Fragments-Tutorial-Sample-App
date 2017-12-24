@@ -18,8 +18,11 @@
         </activity>
         <activity android:name=".SayHelloToFragmentsActivity" />
         <activity android:name=".FragmentTrasactionsActivity" />
-        <activity android:name=".MultipaneLayoutActivity" />
-        <activity android:name=".ViewPagerActivity"></activity>
+        <activity
+            android:name=".MultipaneLayoutActivity"
+            />
+        <activity android:name=".ViewPagerActivity" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>

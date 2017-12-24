@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ss.com.fragments.SayHelloToFragmentsActivity">
+    <View
+        android:id="@+id/view_bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"/>
 
-</android.support.constraint.ConstraintLayout>
+    <fragment
+        android:id="@+id/fragment_sayHelloToFragments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_bottomNavigation"
+        android:name="ss.com.fragments.SimpleFragment"/>
+</RelativeLayout>
