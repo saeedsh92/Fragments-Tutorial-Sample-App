@@ -1,7 +1,7 @@
 package ss.com.fragments;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class MultipaneLayoutActivity extends AppCompatActivity {
 
@@ -10,4 +10,6 @@ public class MultipaneLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multipane_layout);
     }
+
+
 }
