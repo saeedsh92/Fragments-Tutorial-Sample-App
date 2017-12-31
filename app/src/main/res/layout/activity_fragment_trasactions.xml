@@ -22,6 +22,7 @@
         android:weightSum="3">
 
         <Button
+            android:id="@+id/btn_fragmentTransaction_add"
             style="@style/PrimaryButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -30,6 +31,7 @@
             android:text="ADD" />
 
         <Button
+            android:id="@+id/btn_fragmentTransaction_remove"
             style="@style/PrimaryButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,6 +40,7 @@
             android:text="Remove" />
 
         <Button
+            android:id="@+id/btn_fragmentTransaction_replace"
             style="@style/PrimaryButtonStyle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

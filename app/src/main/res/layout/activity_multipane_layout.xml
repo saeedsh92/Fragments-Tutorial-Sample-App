@@ -5,5 +5,9 @@
     android:layout_height="match_parent"
     tools:context="ss.com.fragments.multipane.MultipaneLayoutActivity">
 
-
+    <fragment
+        android:id="@+id/fragment_multiPaneLayout_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="ss.com.fragments.ContactsFragment"/>
 </RelativeLayout>

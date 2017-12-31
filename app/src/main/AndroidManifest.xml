@@ -33,6 +33,8 @@
             android:name=".viewpager.statepageradapter.StatePagerAdapterSampleActivity"
             android:label="StatePagerAdapter" />
         <activity android:name=".childfragment.FragmentInsideFragmentSample" android:label="Nested Fragment"></activity>
+
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>

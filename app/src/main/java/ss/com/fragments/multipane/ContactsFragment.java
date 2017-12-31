@@ -17,10 +17,22 @@ import ss.com.fragments.R;
  */
 
 public class ContactsFragment extends Fragment {
+    private View rootView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_contacts, container, false);
+        if (rootView == null) {
+            rootView = inflater.inflate(R.layout.fragment_contacts, container, false);
+            setupViews();
+        }
+        return rootView;
+    }
+
+    private void setupViews() {
+        RecyclerView recyclerView = rootView.findViewById(R.id.rv_contacts);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
+        ContactsAdapter contactsAdapter = new ContactsAdapter((ContactsAdapter.ContactViewHolder.OnContactClickListener) getActivity());
+        recyclerView.setAdapter(contactsAdapter);
     }
 }
