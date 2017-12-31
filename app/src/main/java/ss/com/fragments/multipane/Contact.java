@@ -1,4 +1,4 @@
-package ss.com.fragments;
+package ss.com.fragments.multipane;
 
 /**
  * @author S.Shahini

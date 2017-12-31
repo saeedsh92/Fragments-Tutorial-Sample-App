@@ -7,6 +7,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import ss.com.fragments.childfragment.FragmentInsideFragmentSample;
+import ss.com.fragments.multipane.MultipaneLayoutActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -50,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MultipaneLayoutActivity.class));
+            }
+        });
+
+        Button childFragmentButton=findViewById(R.id.btn_main_childFragment);
+        childFragmentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FragmentInsideFragmentSample.class));
             }
         });
     }

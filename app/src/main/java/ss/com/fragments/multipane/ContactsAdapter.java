@@ -1,4 +1,4 @@
-package ss.com.fragments;
+package ss.com.fragments.multipane;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ss.com.fragments.R;
 
 /**
  * @author S.Shahini

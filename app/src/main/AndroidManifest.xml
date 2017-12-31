@@ -18,8 +18,21 @@
         </activity>
         <activity android:name=".SayHelloToFragmentsActivity" />
         <activity android:name=".FragmentTrasactionsActivity" />
-        <activity android:name=".MultipaneLayoutActivity" />
-        <activity android:name=".ViewPagerActivity"></activity>
+        <activity android:name=".multipane.MultipaneLayoutActivity" />
+        <activity android:name=".ViewPagerActivity" />
+        <activity
+            android:name=".viewpager.pageradapter.PagerAdapterSampleActivity"
+            android:label="PagerAdapter" />
+        <activity
+            android:name=".viewpager.onefragment.OneFragmentWithDifferentContentActivity"
+            android:label="ViewPager with one fragment and different content" />
+        <activity
+            android:name=".viewpager.rtlviewpager.RtlViewPagerSampleActivity"
+            android:label="RTL ViewPager" />
+        <activity
+            android:name=".viewpager.statepageradapter.StatePagerAdapterSampleActivity"
+            android:label="StatePagerAdapter" />
+        <activity android:name=".childfragment.FragmentInsideFragmentSample" android:label="Nested Fragment"></activity>
     </application>
 
 </manifest>

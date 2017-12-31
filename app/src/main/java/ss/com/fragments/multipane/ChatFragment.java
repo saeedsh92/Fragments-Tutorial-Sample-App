@@ -1,4 +1,4 @@
-package ss.com.fragments;
+package ss.com.fragments.multipane;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import ss.com.fragments.R;
 
 /**
  * @author S.Shahini

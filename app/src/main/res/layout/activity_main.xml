@@ -52,6 +52,13 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="Multipane layout" />
+
+            <Button
+                android:id="@+id/btn_main_childFragment"
+                style="@style/PrimaryButtonStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Nested Fragments" />
         </LinearLayout>
     </FrameLayout>
 </RelativeLayout>
