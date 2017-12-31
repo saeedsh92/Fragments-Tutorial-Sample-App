@@ -5,6 +5,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
+import ss.com.fragments.ChatActivity;
 import ss.com.fragments.R;
 
 public class MultipaneLayoutActivity extends AppCompatActivity implements ContactsAdapter.ContactViewHolder.OnContactClickListener {

@@ -9,5 +9,5 @@
         android:id="@+id/fragment_multiPaneLayout_contacts"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="ss.com.fragments.ContactsFragment"/>
+        android:name="ss.com.fragments.multipane.ContactsFragment"/>
 </RelativeLayout>

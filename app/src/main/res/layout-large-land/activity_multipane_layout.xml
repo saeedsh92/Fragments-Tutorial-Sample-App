@@ -3,18 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ss.com.fragments.MultipaneLayoutActivity">
+    tools:context=".multipane.MultipaneLayoutActivity">
 
     <fragment
         android:id="@+id/fragment_multiPaneLayout_contacts"
-        android:name="ss.com.fragments.ContactsFragment"
+        android:name="ss.com.fragments.multipane.ContactsFragment"
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true" />
 
     <fragment
         android:id="@+id/fragment_multiPaneLayout_chat"
-        android:name="ss.com.fragments.ChatFragment"
+        android:name="ss.com.fragments.multipane.ChatFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_toRightOf="@id/fragment_multiPaneLayout_contacts" />

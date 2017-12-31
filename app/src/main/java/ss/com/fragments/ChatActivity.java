@@ -3,6 +3,9 @@ package ss.com.fragments;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import ss.com.fragments.multipane.ChatFragment;
+import ss.com.fragments.multipane.Contact;
+
 public class ChatActivity extends AppCompatActivity {
 
     private String contactName;
