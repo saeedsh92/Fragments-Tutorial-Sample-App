@@ -12,7 +12,20 @@
             android:id="@+id/toolbar_oneFragmentWithDifferentContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
             app:titleTextColor="@android:color/white"
             />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_oneFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="#aaffffff"/>
     </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_oneFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 </android.support.design.widget.CoordinatorLayout>

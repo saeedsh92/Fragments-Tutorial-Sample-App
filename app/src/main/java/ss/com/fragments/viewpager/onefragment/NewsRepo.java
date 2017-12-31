@@ -1,4 +1,4 @@
-package ss.com.fragments.viewpager.statepageradapter;
+package ss.com.fragments.viewpager.onefragment;
 
 import java.util.ArrayList;
 

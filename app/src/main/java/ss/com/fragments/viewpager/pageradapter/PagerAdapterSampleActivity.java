@@ -1,5 +1,7 @@
 package ss.com.fragments.viewpager.pageradapter;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -26,6 +28,13 @@ public class PagerAdapterSampleActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        ViewPager viewPager=findViewById(R.id.viewPager_pagerAdapter);
+        viewPager.setOffscreenPageLimit(3);
+        TabLayout tabLayout=findViewById(R.id.tabLayout_pagerAdapterSample);
+        viewPager.setAdapter(new SamplePagerAdapter(getSupportFragmentManager()));
+        viewPager.setCurrentItem(1);
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 }

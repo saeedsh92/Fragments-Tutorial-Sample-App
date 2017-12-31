@@ -14,5 +14,19 @@
             android:layout_height="wrap_content"
             app:titleTextColor="@android:color/white"
             />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_rtlViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#aaffffff"
+            app:tabSelectedTextColor="@android:color/white"
+            />
     </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_rtlViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 </android.support.design.widget.CoordinatorLayout>

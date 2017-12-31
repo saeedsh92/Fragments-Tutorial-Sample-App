@@ -1,5 +1,7 @@
 package ss.com.fragments.viewpager.rtlviewpager;
 
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -27,5 +29,12 @@ public class RtlViewPagerSampleActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        ViewPager viewPager=findViewById(R.id.viewPager_rtlViewPager);
+        TabLayout tabLayout=findViewById(R.id.tabLayout_rtlViewPager);
+        viewPager.setAdapter(new RtlViewPagerSampleAdapter(getSupportFragmentManager()));
+        viewPager.setCurrentItem(2,false);
+        tabLayout.setupWithViewPager(viewPager);
+
     }
 }

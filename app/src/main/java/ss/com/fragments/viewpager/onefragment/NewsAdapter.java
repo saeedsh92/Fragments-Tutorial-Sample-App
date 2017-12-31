@@ -1,4 +1,4 @@
-package ss.com.fragments.viewpager.statepageradapter;
+package ss.com.fragments.viewpager.onefragment;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

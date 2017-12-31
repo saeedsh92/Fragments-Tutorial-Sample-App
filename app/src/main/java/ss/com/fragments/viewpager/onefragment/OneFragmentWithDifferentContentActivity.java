@@ -1,6 +1,8 @@
 package ss.com.fragments.viewpager.onefragment;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -26,6 +28,11 @@ public class OneFragmentWithDifferentContentActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        ViewPager viewPager=findViewById(R.id.viewPager_oneFragment);
+        TabLayout tabLayout=findViewById(R.id.tabLayout_oneFragment);
+        viewPager.setAdapter(new OneFragmentPagerAdapter(getSupportFragmentManager()));
+        tabLayout.setupWithViewPager(viewPager);
     }
 
 }

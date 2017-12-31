@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import ss.com.fragments.BaseFragment;
 import ss.com.fragments.R;
 
 /**
@@ -14,11 +15,11 @@ import ss.com.fragments.R;
  * @since 12/31/17
  */
 
-public class ChildFragment extends Fragment {
+public class ChildFragment extends BaseFragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_chat, container, false);
+        return inflater.inflate(R.layout.fragment_child, container, false);
     }
 }
